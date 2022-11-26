@@ -66,23 +66,20 @@ cite {
 .nav-bar li {
     border-radius: 10px;
     font-size: 22px;
-    color:rgba(255, 166, 0, 0.938);
+    color:rgba(255, 166, 0, 0.938); /* This color is passed to the a tag child element on normal state (no hovering).  */
     padding: 10px;
 }
 
 .nav-bar li a {
-    color:inherit; 
+    color:inherit;  /* This is an inheritance in order for the a element text color to be changed when the mouse hover over the li parent element */
     text-decoration: none;
     padding: 20px 20px;
 }
 
-.nav-bar li:hover {
-}
-
-.nav-bar li:nth-child(n+2):hover{
+.nav-bar li:nth-child(n+2):hover{ /* When the mouse hover the li tags (different from the first one) elements in the nav-bar, the following style is applied to the hovered li tag element.*/
     border: 1px solid orange;
     background-color: rgb(255, 165, 0);
-    color: black;
+    color: black; /* This color is passed to the a tag child element on mouse hovering in order to style the text color. */
 }
 
 .hero {
@@ -110,7 +107,7 @@ cite {
     padding-top: 30px;
     padding-bottom: 30px;
     margin: auto;
-    display: block;
+    display: block; /* This layout technique allows us to center the hero layered text with a customizable size into the hero itself.*/
     position: absolute;
     z-index: 1;
     left: 50%;
@@ -137,7 +134,7 @@ cite {
 
 /* BODY */
 .row-container {
-    display: flex;
+    display: flex; /* Used to align items in this container in a row layout.*/
     flex-direction: row;
     justify-content: space-between;
 }
