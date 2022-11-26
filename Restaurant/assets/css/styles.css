@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/* VARIABLES */
+:root {
+    --navbar_color: rgb(255, 165, 0);
+    --navbar_btn_hover_color: rgb(255, 217, 204);
+    --navbar_btn_bg_color: chocolate;
+    --text_clr: white;
+    --navbar_tab_active_color: coral;
+    --hero_restaurant_name_color: rgba(120, 78, 0, 0.9);
+    --hero_restaurant_bg_color: rgba(255, 255, 255, 0.7);
+}
+
+/* ALL ELEMENT */
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url("../img/Restaurant/allec-gomes-dgheCH9Aj98-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    object-fit: contain;
+    background-color: black;
+    margin: 0;
+    color: #d3d3d3;
+}
+
+/* COMMON */
+h2 {
+    font-size: xx-large;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;    
+    margin: auto;
+    position: relative;
+}
+
+cite {
+    font-size: xx-small;
+    color: #A9A9A9;
+}
+
+.content h2 {
+    margin-top: 50px;
+}
+
+.content figure {
+    margin: 5px !important;
+}
+
+
+/* HEADER */
+.nav-bar li {
+    border-radius: 10px;
+    font-size: 22px;
+    color:rgba(255, 166, 0, 0.938);
+    padding: 10px;
+}
+
+.nav-bar li a {
+    color:inherit; 
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+.nav-bar li:hover {
+}
+
+.nav-bar li:nth-child(n+2):hover{
+    border: 1px solid orange;
+    background-color: rgb(255, 165, 0);
+    color: black;
+}
+
+.hero {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    color: var(--hero_restaurant_name_color);
+    font-weight: 700!important;
+    font-variant: small-caps;
+    font-size: 3rem;
+}
+
+.hero p {
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.hero .layer {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hero figure {
+    text-align: center;
+}
+
+.hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.hero figcaption {
+    text-align: center;
+    margin-top: -30px ;
+}
+
+
+/* BODY */
+.row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .row-container figure {
+    text-align: center;
+}
+
+.content .row-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.content .row-container cite {
+    display: flex;
+    justify-content: center;
+}
+
+.content .row-container figcaption {
+    text-align: center;
+    margin-top: -20px ;
+}
+
+.content .row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content .menu-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .menu-row-container img {
+    width: 50%;
+    align-items: center;
+    border: 5px solid orange;
+    border-radius: 10%;
+}
+
+.content .menu-row-container p {
+    font-size: x-large;
+}
+
+.content .menu-col-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.content .menu-col-container figure {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-flow: nowrap;
+}
+
+.content .menu-col-container img {
+    height: 30%;
+}
+
+.content .drinks-col-container img {
+    height: 30%;
+}
+
+.content .drinks-col-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+
+.content .drinks-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.content .drinks-row-container img {
+    width: 30%;
+    align-items: center;
+    border: 5px solid orange;
+    border-radius: 10%;
+}
+
+.content .drinks-col-container figure {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-flow: nowrap;
+    align-items: center;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+.content .drinks-col-container cite {
+    display: block;
+    width: 220px;
+    margin-top: -55px;
+}
+
+.drinks-col-container p {
+    font-size: x-large;
+}
+
+.left-col {
+    font-size: x-large;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-col address, p {
+    font-size: x-large;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+footer li:nth-child(n+3) {
+    display: block;
+}
+
+.rendered-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rendered-form input, textarea{ 
+    border-radius: 5px;
+    font-size: large;
+    height: 35px;
+}
+
+.rendered-form textarea{ 
+    border-radius: 5px;
+    font-size: large;
+    height: 100px;
+}
+
+.formbuilder-text,.formbuilder-textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formbuilder-button {
+    text-align: center;
+}
+
+.btn-default {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid orange;
+    border-radius: 10px;
+    color: orange;
+    background-color: black;
+}
+
+.btn-default:hover {
+    background-color: orange;
+    border-radius: 10px;
+    color: black;
+}
